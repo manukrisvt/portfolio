@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 export const personalInfo = {
     name: "Manu Krishnan, Ph.D",
-    title: "Strategic AI Leader & Sr. Data Scientist",
+    title: "Sr. Data Scientist @ Joby Aviation | Driving HUMS Innovation in eVTOL",
     location: "Charlotte, NC",
     email: "manukrishnantvm@gmail.com",
     phone: "540-449-7532",
