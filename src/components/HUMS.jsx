@@ -57,6 +57,41 @@ const HUMS = () => {
                         </div>
                     </div>
 
+                    {/* Industry Examples */}
+                    <div className="mb-16">
+                        <h3 className="text-xl font-bold text-text mb-6 flex items-center gap-2">
+                            <Zap className="text-accent" /> HUMS in the Field
+                        </h3>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            <a
+                                href="https://www.geaerospace.com/systems/avionics/connected-aircraft/rotorcraft"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-secondary/30 p-6 rounded-lg border border-white/5 hover:border-accent/30 transition-all group"
+                            >
+                                <h4 className="text-lg font-bold text-text mb-2 group-hover:text-accent transition-colors">
+                                    GE Aerospace - Rotorcraft HUMS
+                                </h4>
+                                <p className="text-text-muted text-sm">
+                                    Advanced vibration monitoring and predictive maintenance for rotorcraft fleets, enabling condition-based maintenance and reducing unscheduled downtime.
+                                </p>
+                            </a>
+                            <a
+                                href="https://aircraft.airbus.com/en/services/enhance/skywise-data-platform/skywise-core-x"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-secondary/30 p-6 rounded-lg border border-white/5 hover:border-accent/30 transition-all group"
+                            >
+                                <h4 className="text-lg font-bold text-text mb-2 group-hover:text-accent transition-colors">
+                                    Airbus Skywise Core X
+                                </h4>
+                                <p className="text-text-muted text-sm">
+                                    Cloud-based aviation data platform leveraging AI and big data analytics to optimize aircraft performance and maintenance across global fleets.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
                     {/* Featured Link */}
                     <motion.a
                         href="https://www.jobyaviation.com/news/joby-taps-nvidia-to-accelerate-next-era-autonomous-flight/"
