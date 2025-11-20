@@ -47,7 +47,7 @@ const Hero = () => {
                         transition={{ delay: 0.5 }}
                         className="text-lg text-text-muted max-w-2xl mb-10 leading-relaxed"
                     >
-                        Specializing in predictive health monitoring, AI innovation, and enterprise analytics.
+                        Specializing in Gen-AI, AI-Driven Physical Modeling, and Fleet Predictive Maintenance.
                         Transforming complex data into strategic insights.
                     </motion.p>
 
