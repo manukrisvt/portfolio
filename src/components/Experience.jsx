@@ -1,9 +1,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { experience, education } from '../data';
-import { Briefcase, GraduationCap, Calendar, MapPin } from 'lucide-react';
+import { Briefcase, GraduationCap, Calendar, MapPin, Wrench, Brain, Activity, Zap, GitBranch, Users, Cpu, FlaskConical, TrendingUp, Database } from 'lucide-react';
+
 
 const Experience = () => {
+    // Map skills to icons
+    const getSkillIcon = (skill) => {
+        const iconMap = {
+            'Predictive Maintenance': Wrench,
+            'Gen-AI (LLM + RAG)': Brain,
+            'Physics-Based Modeling': FlaskConical,
+            'Algorithm Development': GitBranch,
+            'Cross-Functional Leadership': Users,
+            'Order Analysis': TrendingUp,
+            'Real-time Detection': Activity,
+            'Data-Driven Modeling': Database,
+            'PhD Research': GraduationCap,
+            'Vibration Modeling': Activity,
+            'Time Series ML': TrendingUp,
+            'Academic Publishing': Briefcase,
+            'PCA Algorithms': Cpu,
+        };
+
+        const IconComponent = iconMap[skill] || Zap;
+        return <IconComponent size={14} />;
+    };
+
     return (
         <section id="experience" className="py-20">
             <div className="container mx-auto px-6">
@@ -50,8 +73,9 @@ const Experience = () => {
                                             {job.skills.map((skill, skillIndex) => (
                                                 <span
                                                     key={skillIndex}
-                                                    className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full border border-accent/20 hover:bg-accent/20 transition-colors"
+                                                    className="px-3 py-1.5 bg-accent/10 text-accent text-sm rounded-full border border-accent/20 hover:bg-accent/20 transition-colors flex items-center gap-1.5"
                                                 >
+                                                    {getSkillIcon(skill)}
                                                     {skill}
                                                 </span>
                                             ))}
