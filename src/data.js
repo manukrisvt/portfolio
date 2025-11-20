@@ -48,7 +48,9 @@ export const experience = [
             "Led team to build AI agents (LLMs + RAG) for production fleet analysis; reduced expert workload by 40% and improved maintenance responsiveness.",
             "Improved data pipeline runtimes by 60%, integrating Databricks-based solutions for real-time risk detection and model validation.",
             "Developed and validated time-series machine learning models using IMU sensor data for vibration analysis and reliability prediction of advanced aircraft assets.",
-            "Drove collaboration with executives/FAA for product certification and business impact; established rigorous adoption and KPI tracking."
+            "Drove collaboration with executives/FAA for product certification and business impact; established rigorous adoption and KPI tracking.",
+            "Presented paper at VFS Forum 81: 'Bearing Spall Detection and Remaining Useful Life Prediction Using an Operational Binning Approach for eVTOLs'.",
+            "Patent Pending for AI-driven health monitoring and predictive maintenance technologies."
         ]
     },
     {
