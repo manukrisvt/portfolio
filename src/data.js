@@ -46,17 +46,18 @@ export const experience = [
         skills: [
             "Predictive Maintenance",
             "Gen-AI (LLM + RAG)",
-            "Vibration Analysis",
-            "Algorithm Research",
-            "ML/AI Physical Modeling"
+            "Physics-Based Modeling",
+            "Algorithm Development",
+            "Cross-Functional Leadership"
         ],
         achievements: [
-            "Spearheaded predictive health and monitoring for aviation systems using ML/AI, deploying 5+ models for structural diagnostics and maintenance optimization.",
-            "Led team to build AI agents (LLMs + RAG) for production fleet analysis; reduced expert workload by 40% and improved maintenance responsiveness.",
-            "Improved data pipeline runtimes by 60%, integrating Databricks-based solutions for real-time risk detection and model validation.",
-            "Developed and validated time-series machine learning models using IMU sensor data for vibration analysis and reliability prediction of advanced aircraft assets.",
-            "Drove collaboration with executives/FAA for product certification and business impact; established rigorous adoption and KPI tracking.",
-            "Presented paper at VFS Forum 81: 'Bearing Spall Detection and Remaining Useful Life Prediction Using an Operational Binning Approach for eVTOLs'.",
+            "Led cross-functional team to develop and validate 5+ algorithms detecting structural degradation in propellers, actuators, and bearings for Joby S4 aircraft.",
+            "Improved model runtime by 60% by replacing physics-based simulations with data-driven methods.",
+            "Built AI-based HUMS agent using LLMs + RAG for go/no-go decisions, reducing SME workload by 40% and accelerating maintenance actions.",
+            "Designed real-time blade loss detection strategy; validated under flight-representative conditions.",
+            "Developed diagnostics and prognostics for 7+ safety-critical components, contributing to FAA certification efforts.",
+            "Led experimental design and V&V with SMEs, ensuring algorithm reliability for production deployment.",
+            "Integrated predictive models into fleet-wide maintenance strategy, improving failure detection lead time by 30%.",
             "Patent Pending for AI-driven health monitoring and predictive maintenance technologies."
         ]
     },
@@ -66,14 +67,14 @@ export const experience = [
         role: "Propeller Integrity Intern",
         period: "May 2021 -- Aug 2021",
         skills: [
-            "ML Toolkits",
-            "Vibration Monitoring",
-            "Feature Engineering"
+            "Order Analysis",
+            "Real-time Detection",
+            "Data-Driven Modeling"
         ],
         achievements: [
-            "Developed real-time machine learning toolkits (Python/Databricks) for structural imbalance and failure detection.",
-            "Modeled operational bearing harmonics and designed monitoring protocols deployed across critical fleet assets.",
-            "Applied advanced feature engineering with IMU time series data for anomaly detection and vibration monitoring in propeller subsystems."
+            "Developed a Python toolbox based on order analysis for real-time detection of propeller imbalance and blade loss.",
+            "Designed an online time-domain algorithm to detect the onset of propeller damage and imbalance.",
+            "Created a data-driven model of bearing harmonics under operational conditions, achieving an accuracy of approximately 75%."
         ]
     },
     {
@@ -91,7 +92,7 @@ export const experience = [
             "PhD Dissertation: Dynamic data-driven modeling of vibration in aircraft engine",
             "Led PhD research on dynamic machine learning models for structural vibration and health monitoring, leveraging IMU sensor and time series data for aerospace reliability applications.",
             "Developed and validated multiphysics, time series ML models; mentored undergraduate researchers and partnered with sponsors for technology transfer.",
-            "Produced 2 high-impact publications and filed a patent based on novel AI-driven vibration diagnostics."
+            "Produced 5 high-impact publications"
         ]
     },
     {
@@ -147,6 +148,19 @@ export const memberships = [
 
 export const publications = [
     {
+        type: "Conference",
+        title: "Bearing Spall Detection and Remaining Useful Life Prediction Using an Operational Binning Approach for eVTOLs",
+        authors: "Krishnan, M. et al.",
+        venue: "VFS Forum 81 (2025)",
+        link: "https://proceedings.vtol.org/81/integrated-vehicle-health-management/bearing-spall-detection-and-remaining-useful-life-prediction-using-an-operational-binning-approach-for-evtols"
+    },
+    {
+        type: "Journal",
+        title: "Data-Driven Modeling of Vibrations in Turbofan Engines Under Different Operating Conditions",
+        authors: "Krishnan, M., Sever, I.A. and Tarazaga, P.",
+        venue: "AIAA Journal (2022)"
+    },
+    {
         type: "Journal",
         title: "Real time damage detection using recursive principal components and time varying auto-regressive modeling",
         authors: "Krishnan, M, Bhowmik, B., Hazra, B., and Pakrashi, V.",
@@ -157,12 +171,5 @@ export const publications = [
         title: "Online damage detection using recursive principal component analysis and recursive condition indicators",
         authors: "Krishnan, M, Bhowmik, B., Tiwari, A., and Hazra, B.",
         venue: "Smart Materials and Structures (2017)"
-    },
-    {
-        type: "Journal",
-        title: "Data-Driven Modeling of Vibrations in Turbofan Engines Under Different Operating Conditions",
-        authors: "Krishnan, M., Sever, I.A. and Tarazaga, P.",
-        venue: "AIAA Journal (2022)"
-    },
-    // Add more if needed, keeping it concise for the web view
+    }
 ];
