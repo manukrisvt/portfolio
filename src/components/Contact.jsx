@@ -24,8 +24,8 @@ const Contact = () => {
                         transition={{ delay: 0.1 }}
                         className="text-lg text-text-muted mb-12"
                     >
-                        I'm currently exploring new opportunities in AI Leadership and Data Science.
-                        Feel free to reach out!
+                        Interested in discussing HUMS innovation, AI-driven solutions, or data science challenges?
+                        I'm always open to connecting with fellow professionals and exploring collaborative opportunities.
                     </motion.p>
 
                     <div className="flex flex-col md:flex-row justify-center gap-8">
