@@ -1,0 +1,193 @@
+\documentclass{article}
+\usepackage{scimisc-cv}
+\usepackage{etoolbox,refcount}
+\usepackage{multicol}
+
+\newcounter{countitems}
+\newcounter{nextitemizecount}
+\newcommand{\setupcountitems}{%
+  \stepcounter{nextitemizecount}%
+  \setcounter{countitems}{0}%
+  \preto\item{\stepcounter{countitems}}%
+}
+\makeatletter
+\newcommand{\computecountitems}{%
+  \edef\@currentlabel{\number\c@countitems}%
+  \label{countitems@\number\numexpr\value{nextitemizecount}-1\relax}%
+}
+\newcommand{\nextitemizecount}{%
+  \getrefnumber{countitems@\number\c@nextitemizecount}%
+}
+\newcommand{\previtemizecount}{%
+  \getrefnumber{countitems@\number\numexpr\value{nextitemizecount}-1\relax}%
+}
+\makeatother    
+\newenvironment{AutoMultiColItemize}{%
+\ifnumcomp{\nextitemizecount}{>}{3}{\begin{multicols}{2}}{}%
+\setupcountitems\begin{itemize}}%
+{\end{itemize}%
+\unskip\computecountitems\ifnumcomp{\previtemizecount}{>}{3}{\end{multicols}}{}}
+
+\title{Scismic's Recommended CV for Biotech and Pharma Positions}
+\author{Scismic: The Talent Matching Platform for The Life Sciences (www.scismic.com)}
+\date{May 2020}
+
+%% These are custom commands defined in scimisc-cv.sty
+\cvname{Manu Krishnan, Ph.D}
+\cvpersonalinfo{
+Charlotte, NC \cvinfosep 
+540-449-7532 \cvinfosep
+manukrishnantvm@gmail.com \cvinfosep
+}
+
+\begin{document}
+
+% \maketitle %% This is LaTeX's default title constructed from \title,\author,\date
+
+\makecvtitle
+
+\section{Summary: Strategic AI Leader \& Sr. Data Scientist}
+Results-driven Sr. Data Scientist and technical leader with $7+$ years spanning predictive health monitoring, AI innovation, and academic research. Demonstrated expertise driving enterprise analytics, leading cross-functional teams, and developing production-grade AI/ML solutions to optimize complex system reliability. Adept at translating business needs into technical product strategies and driving organizational outcomes via data-driven innovation, executive collaboration, and agile project management.
+
+\noindent\textbf{Core Competencies:}
+\begin{itemize}
+    \item Predictive Modeling \& Prognostics Algorithms
+    \item Enterprise AI Strategy, Predictive Analytics, and ML
+    \item Structural Health Monitoring \& Diagnostics
+    \item Cross-functional Team Leadership \& Agile Project Management
+    \item AI Agents (Google ADK, LangGraph), LLMs, Retrieval-Augmented Generation (RAG)
+    \item Big Data Processing (Spark, Delta Lake, MLOps)
+    \item Git Version Control and Software Product Lifecycle
+    \item Time Series AI and IMU Sensor Data Modeling
+\end{itemize}
+
+\section{Technical Skills}
+\begin{itemize}
+\begin{AutoMultiColItemize}
+    \item \textbf{Programming:} Python, Java, R, $C++$, Matlab
+    \item \textbf{Big Data/Cloud:} Databricks, Spark, Delta Lake, Git, MLOps workflows
+    \item \textbf{GenAI:} LLMs, RAG, LangChain, LangGraph, Google ADK
+    \item \textbf{Data Engineering:} SQL, workflow automation
+    \item \textbf{Visualization/Reporting:} Power BI, Tableau, Excel, PowerPoint
+    \item \textbf{Modeling/Test:} Ansys, Abaqus, Nastran, FEMap, Labview
+\end{AutoMultiColItemize}
+\end{itemize}
+
+\section{Work Experience}
+
+\cvsubsection{Joby Aviation}[Santa Cruz, CA]
+[Sr. Data Scientist (Health Usage and Monitoring)][Jan 2022 -- Present]
+\begin{itemize}
+    \item Spearheaded predictive health and monitoring for aviation systems using ML/AI, deploying $5+$ models for structural diagnostics and maintenance optimization.
+    \item Led team to build AI agents (LLMs + RAG) for production fleet analysis; reduced expert workload by $40\%$ and improved maintenance responsiveness.
+    \item Improved data pipeline runtimes by $60\%$, integrating Databricks-based solutions for real-time risk detection and model validation.
+    \item Developed and validated time-series machine learning models using IMU sensor data for vibration analysis and reliability prediction of advanced aircraft assets.
+    \item Drove collaboration with executives/FAA for product certification and business impact; established rigorous adoption and KPI tracking.
+\end{itemize}
+
+\cvsubsection{Joby Aviation}[Santa Cruz, CA]
+[Propeller Integrity Intern][May 2021 -- Aug 2021]
+\begin{itemize}
+    \item Developed real-time machine learning toolkits (Python/Databricks) for structural imbalance and failure detection.
+    \item Modeled operational bearing harmonics and designed monitoring protocols deployed across critical fleet assets.
+    \item Applied advanced feature engineering with IMU time series data for anomaly detection and vibration monitoring in propeller subsystems.
+\end{itemize}
+
+\section{Research Experience}
+
+\cvsubsection{Virginia Tech}[Blacksburg, VA]
+[Graduate Research Assistant][Sept 2017 -- Dec 2021]
+\begin{itemize}
+    \item \textbf{PhD Dissertation:} Dynamic data-driven modeling of vibration in aircraft engine
+    \begin{itemize}
+        \item Led PhD research on dynamic machine learning models for structural vibration and health monitoring, leveraging IMU sensor and time series data for aerospace reliability applications.
+        \item Developed and validated multiphysics, time series ML models; mentored undergraduate researchers and partnered with sponsors for technology transfer.
+        \item Produced 2 high-impact publications and filed a patent based on novel AI-driven vibration diagnostics.
+    \end{itemize}
+\end{itemize}
+
+%% An example of leaving an argument empty
+\cvsubsection{Indian Institute of Technology (IIT) - Guwahati}[Guwahati, India][Graduate research][Jan 2016 to May 2017]
+
+\begin{itemize}
+    \item Developed recursive PCA and AR-based real-time detection algorithms; published in leading journals.
+\end{itemize}
+
+\section{Education}
+\cvsubsection{Virginia Tech}[Blacksburg, VA]
+[\textbf{PhD (STEM) - Aerospace Engineering (Structures)} - Current GPA 3.96][Sept 2017 to Dec 2021]
+\begin{itemize}
+\item Elastic Stability, Advanced Aero hydrodynamics, Structural Optimization, Vehicle Structures, Dynamical systems and controls.
+\item \textbf{Graduate certificate in Data analytics} - Data analysis - I, Bayesian analysis, Time series analysis, Advanced Machine learning.
+\end{itemize}
+\cvsubsection{Indian Institute of Technology (IIT) - Guwahati}[Guwahati, India][M. tech - Structural Engineering - GPA 4.0 (Batch topper)][Sept 2015 to May 2017]
+\begin{itemize}
+\item Structural analysis, Structural dynamics, Finite element methods, Advanced Structural system Design, Reliability based design.
+\end{itemize}
+
+%--------AWARDS----------
+\section{Honors \& Fellowships}
+\begin{itemize}
+    \item John R. Jones III Graduate Fellowship -- Virginia Tech
+    \item Rolls Royce Fellowship -- Virginia Tech / Rolls Royce
+    \item Pratt Fellowship, Structural Engineering Batch Topper (IIT-G)
+\end{itemize}
+
+%--------PROFESSIONAL SOCIETY----------
+\section{Professional Membership}
+\begin{itemize}
+    \item SAE HM-1 Integrated Vehicle Health Management Liaison
+    \item Society of Experimental Mechanics (SEM)
+    \item American Institute of Aeronautics and Astronautics (AIAA)
+\end{itemize}
+
+ \section{Journal Publications}
+ \begin{itemize}
+     \item \textbf{Krishnan, M}, Bhowmik, B., Hazra, B., and Pakrashi, V. (2018).  Real time damage detectionusing recursive principal components and time varying auto-regressive modeling. Mechanical Systems and Signal Processing, 101:549–574.
+     \item \textbf{Krishnan, M}, Bhowmik, B., Tiwari, A., and Hazra, B. (2017). Online damage detection using recursive principal component analysis and recursive condition indicators. Smart Materials and Structures, 26(8):085017
+     \item Bhowmik, B.,\textbf{Manu Krishnan}, Hazra, B., and Pakrashi, V. (2019).  Real-time unified single-and multi-channel structural damage detection using recursive singular spectrum analysis. Structural Health Monitoring, 18(2):563–589.
+     \item Malladi, V.V.S., Albakri, M.I., \textbf{Krishnan, M.}, Gugercin, S. and Tarazaga, P.A. (2022). Estimating experimental dispersion curves from steady-state frequency response measurements. Mechanical Systems and Signal Processing, 164, p.108218.
+     \item \textbf{Krishnan, M.}, Sever, I.A. and Tarazaga, P. (2022). Data-Driven Modeling of Vibrations in Turbofan Engines Under Different Operating Conditions. AIAA Journal, pp.1-15.
+     \item \textbf{Krishnan, M.}, Malladi, V.V.S. and Tarazaga, P.A. (2022). Leveraging a data-driven approach to simulate and experimentally validate a MIMO multiphysics vibroacoustic system. Mechanical Systems and Signal Processing, 166, p.108414.
+     \item \textbf{Krishnan, M.}, Gugercin, S., and Tarazaga, P. A. (2023). A wavelet-based dynamic mode decomposition for modeling mechanical systems from partial observations. Mechanical Systems and Signal Processing, 187, 109919.
+ \end{itemize}
+ \section{Conference Publications}
+ \begin{itemize}
+     \item Krishnan, M., Gugercin, S., Sever, I., and Tarazaga, P. (2020). Dynamic Data Driven Modeling of Aero Engine Response. In Model Validation and Uncertainty Quantification, Volume 3: Proceedings of the 38th IMAC, A Conference and Exposition on Structural Dynamics 2020 (pp. 273-278). Springer International Publishing.
+\item Krishnan, M., Jin, R., Sever, I. A., and Tarazaga, P. A. (2020). Data based modeling of aero engine vibration responses. In Sensors and Instrumentation, Aircraft/Aerospace, Energy Harvesting & Dynamic Environments Testing, Volume 7: Proceedings of the 37th IMAC, A Conference and Exposition on Structural Dynamics 2019 (pp. 365-368). Springer International Publishing.
+\item Krishnan, M., Gugercin, S., and Tarazaga, P. (2021). Wavelet‐based dynamic mode decomposition. PAMM, 20(S1), e202000355.
+\item Krishnan, M., Sever, I. A., and Tarazaga, P. A. (2020). Determining Interdependencies and Causation of Vibration in Aero Engines Using Multiscale Cross-Correlation Analysis. In Model Validation and Uncertainty Quantification, Volume 3: Proceedings of the 38th IMAC, A Conference and Exposition on Structural Dynamics 2020 (pp. 265-272). Springer International Publishing.
+\item Bhowmik, B., Krishnan, M., Hazra, B., and Pakrashi, V. (2017). Online damage detection using recursive principal component analysis. Procedia engineering, 199, 2108-2113.
+\item Davaria, S., Krishnan, M., Sriram Malladi, V. V., and Tarazaga, P. A. (2022, August). Miniature Underwater Robot–An Experimental Case Study. In Special Topics in Structural Dynamics & Experimental Techniques, Volume 5: Proceedings of the 40th IMAC, A Conference and Exposition on Structural Dynamics 2022 (pp. 119-122). Cham: Springer International Publishing.
+
+ \end{itemize}
+
+
+%  \cvsubsection{Virginia Tech}[Blacksburg, VA]
+% [\textbf{Graduate certificate in Data analytics}][Jan 2018 to present]
+% \begin{itemize}
+% \item Data analysis - I, Bayesian analysis, Time series analysis, Advanced Machine learning. 
+% \end{itemize}
+
+\section{Scholarship and Awards}
+\begin{itemize}
+\item John R. Jones III Graduate student Fellowship - Offered by Department of Mechanical Engineering - Virginia Tech (2020 - present)
+\item Rolls Royce Graduate Fellowship - Offered by Virginia Tech and Rolls Royce towards successful completion of PhD covering tuition expenses, stipend and consumables (2019 - present). 
+\item Pratt Fellowship - Offered by Department of Aerospace and Ocean Engineering - Virginia Tech (2017-2018)
+\item Structural Engineering 2015-17 Batch Topper - Offered by Indian Institute of Technology, Guwahati. 
+\end{itemize}
+\section{Professional Society Membership}
+\begin{itemize}
+\item Liaison to the SAE HM-1 Integrated Vehicle Health Management (2022 - Present)
+\item Society of Experimental Mechanics (2017 - Present)
+\item American Institute of Aeronautics and Astronautics (2017-Present)
+\end{itemize}
+
+% 
+
+
+
+% Candidate open to obtaining security clearance if required
+
+
+\end{document}
