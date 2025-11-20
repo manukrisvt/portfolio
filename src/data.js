@@ -11,7 +11,10 @@ export const personalInfo = {
         // { name: "LinkedIn", icon: FaLinkedin, link: "https://linkedin.com/in/..." }, // Add if known
         // { name: "GitHub", icon: FaGithub, link: "https://github.com/..." }, // Add if known
     ],
-    summary: "Results-driven Sr. Data Scientist and technical leader with 7+ years spanning predictive health monitoring, AI innovation, and academic research. Demonstrated expertise driving enterprise analytics, leading cross-functional teams, and developing production-grade AI/ML solutions to optimize complex system reliability. Adept at translating business needs into technical product strategies and driving organizational outcomes via data-driven innovation, executive collaboration, and agile project management."
+    summary: [
+        "Results-driven Sr. Data Scientist and technical leader with 7+ years spanning predictive health monitoring, AI innovation, and academic research. Demonstrated expertise driving enterprise analytics, leading cross-functional teams, and developing production-grade AI/ML solutions to optimize complex system reliability. Adept at translating business needs into technical product strategies and driving organizational outcomes via data-driven innovation, executive collaboration, and agile project management.",
+        "My academic foundation is built on a Ph.D. in Aerospace Engineering from Virginia Tech, where I specialized in dynamic data-driven modeling and vibration analysis. Prior to that, I earned my M.Tech in Structural Engineering from IIT Guwahati. This rigorous research background has equipped me with a deep understanding of complex systems and the mathematical rigor required to develop robust AI solutions and drive innovation."
+    ]
 };
 
 export const coreCompetencies = [

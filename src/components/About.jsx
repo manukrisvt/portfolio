@@ -19,9 +19,15 @@ const About = () => {
                         About Me
                     </h2>
 
-                    <p className="text-lg text-text-muted leading-relaxed mb-12">
-                        {personalInfo.summary}
-                    </p>
+                    <div className="text-lg text-text-muted leading-relaxed mb-12 space-y-6">
+                        {Array.isArray(personalInfo.summary) ? (
+                            personalInfo.summary.map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))
+                        ) : (
+                            <p>{personalInfo.summary}</p>
+                        )}
+                    </div>
 
                     <h3 className="text-2xl font-bold text-text mb-6">Core Competencies</h3>
                     <div className="grid md:grid-cols-2 gap-4">
