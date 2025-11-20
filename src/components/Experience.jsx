@@ -45,6 +45,19 @@ const Experience = () => {
                                         </div>
                                     </div>
 
+                                    {job.skills && job.skills.length > 0 && (
+                                        <div className="flex flex-wrap gap-2 mb-4">
+                                            {job.skills.map((skill, skillIndex) => (
+                                                <span
+                                                    key={skillIndex}
+                                                    className="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full border border-accent/20 hover:bg-accent/20 transition-colors"
+                                                >
+                                                    {skill}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    )}
+
                                     <ul className="space-y-2">
                                         {job.achievements.map((achievement, i) => (
                                             <li key={i} className="text-text-muted flex items-start gap-2">
@@ -77,6 +90,15 @@ const Experience = () => {
                                             <h4 className="text-xl font-bold text-text">{edu.degree}</h4>
                                             <p className="text-accent font-medium">{edu.institution}</p>
                                             <p className="text-sm text-text-muted mt-1">GPA: {edu.gpa}</p>
+                                            {edu.skills && edu.skills.length > 0 && (
+                                                <div className="flex flex-wrap gap-2 mt-3">
+                                                    {edu.skills.map((skill, i) => (
+                                                        <span key={i} className="bg-accent/20 text-accent text-xs px-2 py-1 rounded-full">
+                                                            {skill}
+                                                        </span>
+                                                    ))}
+                                                </div>
+                                            )}
                                         </div>
                                         <div className="flex flex-col md:items-end text-sm text-text-muted mt-2 md:mt-0">
                                             <span className="flex items-center gap-1"><Calendar size={14} /> {edu.period}</span>

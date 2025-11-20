@@ -43,6 +43,13 @@ export const experience = [
         location: "Santa Cruz, CA",
         role: "Sr. Data Scientist (Health Usage and Monitoring)",
         period: "Jan 2022 -- Present",
+        skills: [
+            "Predictive Maintenance",
+            "Gen-AI (LLM + RAG)",
+            "Vibration Analysis",
+            "Algorithm Research",
+            "ML/AI Physical Modeling"
+        ],
         achievements: [
             "Spearheaded predictive health and monitoring for aviation systems using ML/AI, deploying 5+ models for structural diagnostics and maintenance optimization.",
             "Led team to build AI agents (LLMs + RAG) for production fleet analysis; reduced expert workload by 40% and improved maintenance responsiveness.",
@@ -58,6 +65,11 @@ export const experience = [
         location: "Santa Cruz, CA",
         role: "Propeller Integrity Intern",
         period: "May 2021 -- Aug 2021",
+        skills: [
+            "ML Toolkits",
+            "Vibration Monitoring",
+            "Feature Engineering"
+        ],
         achievements: [
             "Developed real-time machine learning toolkits (Python/Databricks) for structural imbalance and failure detection.",
             "Modeled operational bearing harmonics and designed monitoring protocols deployed across critical fleet assets.",
@@ -69,6 +81,12 @@ export const experience = [
         location: "Blacksburg, VA",
         role: "Graduate Research Assistant",
         period: "Sept 2017 -- Dec 2021",
+        skills: [
+            "PhD Research",
+            "Vibration Modeling",
+            "Time Series ML",
+            "Academic Publishing"
+        ],
         achievements: [
             "PhD Dissertation: Dynamic data-driven modeling of vibration in aircraft engine",
             "Led PhD research on dynamic machine learning models for structural vibration and health monitoring, leveraging IMU sensor and time series data for aerospace reliability applications.",
@@ -81,6 +99,10 @@ export const experience = [
         location: "Guwahati, India",
         role: "Graduate research",
         period: "Jan 2016 to May 2017",
+        skills: [
+            "PCA Algorithms",
+            "Real-time Detection"
+        ],
         achievements: [
             "Developed recursive PCA and AR-based real-time detection algorithms; published in leading journals."
         ]
