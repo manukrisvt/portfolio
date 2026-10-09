@@ -70,9 +70,6 @@ const Publications = () => {
                     </div>
                     <p className="text-text-muted text-sm mt-8">
                         Full list: 7 journal papers, 6 conference papers.
-                    </p>
-                    <p className="text-text-muted text-sm mt-2">
-                        Liaison, SAE HM-1 Integrated Vehicle Health Management Committee (2022–present)
                     </p>                </div>
             </div>
         </section>

@@ -8,6 +8,7 @@ import Publications from './components/Publications';
 import Projects from './components/Projects';
 import SelectedWork from './components/SelectedWork';
 import HowIWork from './components/HowIWork';
+import Speaking from './components/Speaking';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -20,6 +21,7 @@ function App() {
         <About />
         <SelectedWork />
         <HowIWork />
+        <Speaking />
         <Experience />
         <Projects />
         <Skills />

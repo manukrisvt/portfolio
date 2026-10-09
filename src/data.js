@@ -196,8 +196,33 @@ export const howIWork = [
     }
 ];
 
-export const professionalService = [
-    "Liaison, SAE HM-1 Integrated Vehicle Health Management Committee (2022–present)"
+export const speaking = [
+    {
+        role: "Panelist",
+        title: "Challenges of AI in Prognostics and Health Management",
+        venue: "PHM Society Annual Conference 2026, Charlotte, NC",
+        takeaway: "Building AI models for PHM is no longer the hard part; proving they work is. Failure data is scarce, synthetic data only helps if it's representative, and until we can prove it, AI should be a partner in maintenance decisions, not the decision-maker.",
+        link: "",
+        linkLabel: "Read the post on LinkedIn",
+        image: "/images/phm-panel.jpg"
+    },
+    {
+        role: "Presenter",
+        title: "Bearing spall detection and remaining-useful-life prediction for eVTOLs",
+        venue: "VFS Forum 81 (2025)",
+        image: "/images/vfs-presentation.jpg"
+    },
+    {
+        role: "Tutorial Instructor",
+        title: "Data-Driven Vibration Modeling",
+        venue: "Tutorial Session 3, 15th Annual Conference of the PHM Society (PHM 2023). A 90-minute tutorial for researchers and practitioners.",
+        image: "/images/phm-tutorial.jpg"
+    },
+    {
+        role: "Liaison",
+        title: "SAE HM-1 Integrated Vehicle Health Management Committee",
+        venue: "2022–present"
+    }
 ];
 
 export const honors = [
@@ -207,7 +232,6 @@ export const honors = [
 ];
 
 export const memberships = [
-    "SAE HM-1 Integrated Vehicle Health Management Liaison",
     "Society of Experimental Mechanics (SEM)",
     "American Institute of Aeronautics and Astronautics (AIAA)"
 ];
