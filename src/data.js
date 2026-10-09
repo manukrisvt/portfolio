@@ -202,7 +202,7 @@ export const speaking = [
         title: "Challenges of AI in Prognostics and Health Management",
         venue: "PHM Society Annual Conference 2026, Charlotte, NC",
         takeaway: "Building AI models for PHM is no longer the hard part; proving they work is. Failure data is scarce, synthetic data only helps if it's representative, and until we can prove it, AI should be a partner in maintenance decisions, not the decision-maker.",
-        link: "",
+        link: "https://lnkd.in/p/gTQgPEAW",
         linkLabel: "Read the post on LinkedIn",
         image: "/images/phm-panel.jpg"
     },
