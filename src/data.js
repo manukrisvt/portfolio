@@ -181,6 +181,21 @@ export const selectedWork = [
     }
 ];
 
+export const howIWork = [
+    {
+        title: "Earning operator trust",
+        description: "My bearing monitoring only became useful once flight test and maintenance trusted it enough to act on it. I worked directly with them to turn probabilistic predictions into clear go/no-go guidance, and showed them where the model could be wrong."
+    },
+    {
+        title: "Building the case across teams",
+        description: "Over several years, I built relationships across Engineering, Maintenance, and Aftermarket, benchmarked how major operators and OEMs run health monitoring, and made the case for HUMS as a maintenance capability. It's now on the maintenance roadmap."
+    },
+    {
+        title: "Turning a vague question into a decision",
+        description: "I saw that ride-quality standards could be applied to our flight data, pulled in a vibration SME, a product SME, a flight test engineer, and a pilot, and turned the findings into a briefing requested by the Chief Pilot and Chief Engineer."
+    }
+];
+
 export const professionalService = [
     "Liaison, SAE HM-1 Integrated Vehicle Health Management Committee (2022–present)"
 ];
