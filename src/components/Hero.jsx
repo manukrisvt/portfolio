@@ -47,8 +47,7 @@ const Hero = () => {
                         transition={{ delay: 0.5 }}
                         className="text-lg text-text-muted max-w-2xl mb-10 leading-relaxed"
                     >
-                        Specializing in Gen-AI, AI-Driven Physical Modeling, and Fleet Predictive Maintenance.
-                        Transforming complex data into strategic insights.
+                        I build ML systems that engineers, pilots, and operators trust enough to act on — from raw flight data to decisions in live operations.
                     </motion.p>
 
                     <motion.div

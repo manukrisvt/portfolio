@@ -8,11 +8,12 @@ const Experience = () => {
     // Map skills to icons
     const getSkillIcon = (skill) => {
         const iconMap = {
-            'Predictive Maintenance': Wrench,
+            'Production ML': Wrench,
+            'Health Monitoring': Activity,
             'Gen-AI (LLM + RAG)': Brain,
-            'Physics-Based Modeling': FlaskConical,
-            'Algorithm Development': GitBranch,
+            'Stakeholder Adoption': Users,
             'Cross-Functional Leadership': Users,
+            'Predictive Maintenance': Wrench,
             'Order Analysis': TrendingUp,
             'Real-time Detection': Activity,
             'Data-Driven Modeling': Database,
@@ -130,14 +131,16 @@ const Experience = () => {
                                         </div>
                                     </div>
 
-                                    <ul className="space-y-2">
-                                        {edu.details.map((detail, i) => (
-                                            <li key={i} className="text-text-muted flex items-start gap-2">
-                                                <span className="text-accent mt-2 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span>
-                                                <span>{detail}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                    {edu.details && edu.details.length > 0 && (
+                                        <ul className="space-y-2">
+                                            {edu.details.map((detail, i) => (
+                                                <li key={i} className="text-text-muted flex items-start gap-2">
+                                                    <span className="text-accent mt-2 w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span>
+                                                    <span>{detail}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
                                 </motion.div>
                             ))}
                         </div>

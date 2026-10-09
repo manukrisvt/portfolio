@@ -30,18 +30,22 @@ const About = () => {
                     </div>
 
                     <h3 className="text-2xl font-bold text-text mb-6">Core Competencies</h3>
-                    <div className="grid md:grid-cols-2 gap-4">
-                        {coreCompetencies.map((item, index) => (
+                    <div className="grid md:grid-cols-2 gap-6">
+                        {coreCompetencies.map((group, index) => (
                             <motion.div
-                                key={index}
+                                key={group.group}
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
-                                className="flex items-start gap-3"
                             >
-                                <CheckCircle className="text-accent shrink-0 mt-1" size={20} />
-                                <span className="text-text-muted">{item}</span>
+                                <h4 className="text-lg font-bold text-text mb-3 flex items-center gap-2">
+                                    <CheckCircle className="text-accent shrink-0" size={18} />
+                                    {group.group}
+                                </h4>
+                                <p className="text-text-muted text-sm leading-relaxed pl-6">
+                                    {group.items.join(" · ")}
+                                </p>
                             </motion.div>
                         ))}
                     </div>

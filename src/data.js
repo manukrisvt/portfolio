@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 export const personalInfo = {
     name: "Manu Krishnan, Ph.D",
-    title: "Staff Scientist @ Joby Aviation | HUMS, ML & AI for eVTOL Certification",
+    title: "Staff Data Scientist @ Joby Aviation | Production ML for Safety-Critical Aviation",
     location: "Charlotte, NC",
     email: "manukrishnantvm@gmail.com",
     phone: "540-449-7532",
@@ -12,54 +12,61 @@ export const personalInfo = {
         // { name: "GitHub", icon: FaGithub, link: "https://github.com/..." }, // Add if known
     ],
     summary: [
-        "Staff Scientist at Joby Aviation with 9+ years spanning predictive health monitoring, AI innovation, and academic research. My background combines two areas rarely found in a single engineer: mechanical vibrations & signal processing (PhD) and applied machine learning & AI systems — plus the data infrastructure that connects them, so I can take a problem from raw sensor data through signal processing, ML modeling, and production deployment without handoffs.",
-        "At Joby, I own production systems on the certification and safety path: a bearing spall detection framework that caught 6 confirmed events in 6 months on a safety-critical component, a Vibe PSD pipeline used by 5+ teams for qualification testing, an RPM-based propeller imbalance threshold table live in the aircraft's CAS alerting software, and an LLM + RAG fleet reliability platform built to meet FAA auditability requirements. I led the filing of the DA team's first patent and its first external publication (VFS 2025).",
-        "My academic foundation is built on a Ph.D. in Aerospace Engineering from Virginia Tech, where I specialized in dynamic data-driven modeling and vibration analysis. Prior to that, I earned my M.Tech in Structural Engineering from IIT Guwahati (batch topper). This rigorous research background has equipped me with a deep understanding of complex systems and the mathematical rigor required to develop robust AI solutions and drive innovation."
+        "Staff Data Scientist at Joby Aviation, building ML and monitoring systems that engineers, pilots, and operators act on, on a safety-critical aircraft program.",
+        "I work at the intersection of vibration signal processing, applied ML, and production data systems, taking problems from raw flight telemetry to deployed tools without handoffs. Just as much of the work is adoption: partnering with Flight Test, Reliability, Maintenance, and component SMEs until a model's output becomes something people trust and use.",
+        "I'm the technical lead for HUMS at Joby, and I mentor engineers across Data Analytics, Loads, and Reliability.",
+        "Ph.D., Virginia Tech · M.Tech, IIT Guwahati (Batch Topper)"
     ]
 };
 
 export const coreCompetencies = [
-    "Predictive Modeling & Prognostics Algorithms",
-    "Structural Health Monitoring (HUMS) & Diagnostics",
-    "Applied ML/AI for Aerospace (LLMs, RAG, XGBoost, Autoencoders)",
-    "Vibration Analysis & Signal Processing",
-    "Data Architecture for Certification-Critical Systems (Delta Lake, Databricks)",
-    "Cross-functional Team Leadership & Technical Mentorship",
-    "FAA Certification & V&V Experience",
-    "Time Series AI and IMU Sensor Data Modeling"
+    {
+        group: "Deployment & Adoption",
+        items: ["Stakeholder alignment", "Requirements scoping", "Roadmapping", "Cross-functional leadership", "Mentorship"]
+    },
+    {
+        group: "Applied ML & AI",
+        items: ["Anomaly detection", "Time-series ML", "XGBoost", "Autoencoders", "Bayesian methods", "LLMs", "RAG", "LangGraph"]
+    },
+    {
+        group: "Signal Processing & Health Monitoring",
+        items: ["Vibration and order analysis", "HUMS", "Fleet reliability metrics"]
+    },
+    {
+        group: "Production Data Systems",
+        items: ["Python", "SQL", "Databricks", "Spark", "Delta Lake", "CI", "Model monitoring"]
+    }
 ];
 
 export const technicalSkills = {
     Programming: ["Python", "Java", "R", "C++", "Matlab"],
-    "Big Data/Cloud": ["Databricks", "Spark", "Delta Lake", "Git", "MLOps workflows"],
+    "Big Data/Cloud": ["Databricks", "Spark", "Delta Lake", "SQL", "Git", "MLOps workflows", "CI", "Model monitoring"],
     GenAI: ["LLMs", "RAG", "LangChain", "LangGraph", "Google ADK"],
-    "Data Engineering": ["SQL", "workflow automation"],
-    "Visualization/Reporting": ["Power BI", "Tableau", "Excel", "PowerPoint"],
-    "Modeling/Test": ["Ansys", "Abaqus", "Nastran", "FEMap", "Labview"]
+    "Visualization": ["Streamlit", "Plotly"]
 };
 
 export const experience = [
     {
         company: "Joby Aviation",
         location: "Santa Cruz, CA",
-        role: "Staff Scientist (Health Usage and Monitoring)",
+        role: "Staff Data Scientist – Predictive Maintenance & Fleet Reliability (HUMS)",
         period: "Jan 2022 -- Present",
         skills: [
-            "Predictive Maintenance",
+            "Production ML",
+            "Health Monitoring",
             "Gen-AI (LLM + RAG)",
-            "Physics-Based Modeling",
-            "Algorithm Development",
+            "Stakeholder Adoption",
             "Cross-Functional Leadership"
         ],
         achievements: [
-            "Led cross-functional team to develop and validate 5+ algorithms detecting structural degradation in propellers, actuators, and bearings for Joby S4 aircraft.",
-            "Improved model runtime by 60% by replacing physics-based simulations with data-driven methods.",
-            "Built AI-based HUMS agent using LLMs + RAG for go/no-go decisions, reducing SME workload by 40% and accelerating maintenance actions.",
-            "Designed real-time blade loss detection strategy; validated under flight-representative conditions.",
-            "Developed diagnostics and prognostics for 7+ safety-critical components, contributing to FAA certification efforts.",
-            "Led experimental design and V&V with SMEs, ensuring algorithm reliability for production deployment.",
-            "Integrated predictive models into fleet-wide maintenance strategy, improving failure detection lead time by 30%.",
-            "Patent Pending for AI-driven health monitoring and predictive maintenance technologies."
+            "Deployed fleet-wide bearing-spall detection on vibration and flight telemetry: 6 confirmed degradation events in 6 months; thresholds adopted into the formal reliability program.",
+            "Showed single-station vibration monitoring was unreliable; replaced it with RPM-conditioned imbalance thresholds now live in the aircraft Crew Alerting System.",
+            "Built LLM classification of maintenance logs and work orders (90% accuracy) with automated reliability metrics; replaced an outsourced effort and became the Reliability team's platform.",
+            "Deployed nightly anomaly detection on fleet vibration data with an LLM triage layer that adds maintenance context to reduce alert fatigue.",
+            "Built RAG/LLM agents summarizing maintenance and flight data; cut go/no-go assessment time by 40%.",
+            "Built and drove adoption of a 4-year predictive maintenance roadmap; presented to the Chief Engineer, Chief Pilot, and executive leadership.",
+            "Technical lead for HUMS; mentor engineers across Data Analytics, Loads, and Reliability.",
+            "Patent filing (co-inventor; led filing): Steady-State Degradation Detection in Rotating Aerospace Systems."
         ]
     },
     {
@@ -73,9 +80,7 @@ export const experience = [
             "Data-Driven Modeling"
         ],
         achievements: [
-            "Developed a Python toolbox based on order analysis for real-time detection of propeller imbalance and blade loss.",
-            "Designed an online time-domain algorithm to detect the onset of propeller damage and imbalance.",
-            "Created a data-driven model of bearing harmonics under operational conditions, achieving an accuracy of approximately 75%."
+            "Built a Python/Databricks toolbox for near-real-time propeller imbalance and blade-loss detection (~75% early-fault detection); method later reused in the fleet bearing-spall framework."
         ]
     },
     {
@@ -90,10 +95,8 @@ export const experience = [
             "Academic Publishing"
         ],
         achievements: [
-            "PhD Dissertation: Dynamic data-driven modeling of vibration in aircraft engine",
-            "Led PhD research on dynamic machine learning models for structural vibration and health monitoring, leveraging IMU sensor and time series data for aerospace reliability applications.",
-            "Developed and validated multiphysics, time series ML models; mentored undergraduate researchers and partnered with sponsors for technology transfer.",
-            "Produced 5 high-impact publications"
+            "Rolls-Royce-sponsored research: data-driven vibration models for aircraft engine health monitoring, separating sensor noise from structural degradation across operating conditions.",
+            "5 journal publications; contributed to a patent submission; mentored undergraduate researchers."
         ]
     },
     {
@@ -115,23 +118,20 @@ export const education = [
     {
         institution: "Virginia Tech",
         location: "Blacksburg, VA",
-        degree: "PhD (STEM) - Aerospace Engineering (Structures)",
+        degree: "Ph.D. - Aerospace Engineering (Structures)",
         gpa: "3.96",
         period: "Sept 2017 to Dec 2021",
         details: [
-            "Elastic Stability, Advanced Aero hydrodynamics, Structural Optimization, Vehicle Structures, Dynamical systems and controls.",
-            "Graduate certificate in Data analytics - Data analysis - I, Bayesian analysis, Time series analysis, Advanced Machine learning."
+            "Graduate Certificate in Data Analytics"
         ]
     },
     {
         institution: "Indian Institute of Technology (IIT) - Guwahati",
         location: "Guwahati, India",
-        degree: "M. tech - Structural Engineering",
+        degree: "M.Tech - Structural Engineering",
         gpa: "4.0 (Batch topper)",
         period: "Sept 2015 to May 2017",
-        details: [
-            "Structural analysis, Structural dynamics, Finite element methods, Advanced Structural system Design, Reliability based design."
-        ]
+        details: []
     }
 ];
 
@@ -139,7 +139,7 @@ export const sideProjects = [
     {
         name: "TallyBite",
         tagline: "AI-powered macro tracking app",
-        description: "A full-stack food tracking PWA: snap a photo of your meal and AI estimates the macros. Built with React, Vite, Tailwind, Capacitor (iOS/Android), Node/Express, and Postgres on Railway. Features Apple Sign-In with JWT verification, Stripe subscriptions, gamification, and trends analytics. Shipping to the App Store.",
+        description: "A full-stack food tracking PWA: snap a photo of your meal and AI estimates the macros. Built with React, Capacitor, Node/Express, and Postgres — shipping to the App Store.",
         tech: ["React", "Vite", "Capacitor", "Node.js", "Postgres", "Stripe", "AI Vision"],
         link: "https://macrosnap-production.up.railway.app",
         emoji: "\ud83c\udf5c"
@@ -147,11 +147,42 @@ export const sideProjects = [
     {
         name: "Home Automation",
         tagline: "Smart home dashboard",
-        description: "A self-hosted smart home dashboard that unifies device control, automation routines, and real-time sensor monitoring into a single web interface for the household.",
-        tech: ["JavaScript", "IoT", "REST APIs", "Dashboard"],
+        description: "A self-hosted smart home dashboard unifying device control, automations, and real-time sensor monitoring. In progress: adding predictive monitoring to flag device and appliance degradation before failure, applying the same health-monitoring approach I use on aircraft to the home.",
+        tech: ["JavaScript", "IoT", "REST APIs", "Time-Series Monitoring"],
         link: "",
         emoji: "\ud83c\udfe1"
     }
+];
+
+export const selectedWork = [
+    {
+        title: "Bearing fault detection",
+        description: "Caught 6 confirmed degradation events in 6 months on a safety-critical component; adopted into Joby's reliability program. Published at VFS 2025."
+    },
+    {
+        title: "Crew alerting",
+        description: "Redesigned propulsion imbalance monitoring; thresholds now live in the aircraft's Crew Alerting System."
+    },
+    {
+        title: "Fleet reliability AI",
+        description: "LLM platform classifying maintenance records with 90% accuracy and an FAA-auditable trail; replaced an outsourced effort and became the Reliability team's platform."
+    },
+    {
+        title: "Go/no-go decision support",
+        description: "AI agents summarizing maintenance and flight data, cutting assessment time by 40%."
+    },
+    {
+        title: "Predictive maintenance roadmap",
+        description: "4-year roadmap presented to the Chief Engineer, Chief Pilot, and executive leadership; HUMS is now on the maintenance roadmap."
+    },
+    {
+        title: "Data pipelines",
+        description: "Automated flight data validation replacing 2–3 hours of manual work per flight; built to carry forward to future aircraft programs."
+    }
+];
+
+export const professionalService = [
+    "Liaison, SAE HM-1 Integrated Vehicle Health Management Committee (2022–present)"
 ];
 
 export const honors = [

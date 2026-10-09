@@ -2,11 +2,11 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import HUMS from './components/HUMS';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Publications from './components/Publications';
 import Projects from './components/Projects';
+import SelectedWork from './components/SelectedWork';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -17,7 +17,7 @@ function App() {
       <main>
         <Hero />
         <About />
-        <HUMS />
+        <SelectedWork />
         <Experience />
         <Projects />
         <Skills />
