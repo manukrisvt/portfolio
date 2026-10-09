@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { personalInfo, proofStats } from '../data';
+import { personalInfo } from '../data';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
@@ -89,26 +89,6 @@ const Hero = () => {
                         </div>
                     </motion.div>
                 </div>
-
-                {/* Proof strip */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.8 }}
-                    className="mt-16 md:mt-20 border-t border-white/10 pt-8"
-                >
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-y-8">
-                        {proofStats.map((stat, index) => (
-                            <div
-                                key={stat.value}
-                                className={`flex flex-col items-center text-center px-4 ${index > 0 ? 'md:border-l md:border-white/10' : ''}`}
-                            >
-                                <span className="text-2xl md:text-3xl font-bold text-accent mb-1">{stat.value}</span>
-                                <span className="text-sm text-text-muted">{stat.label}</span>
-                            </div>
-                        ))}
-                    </div>
-                </motion.div>
             </div>
         </section>
     );
