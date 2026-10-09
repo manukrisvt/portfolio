@@ -1,7 +1,15 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 
+export const proofStats = [
+    { value: "6 in 6 mo", label: "confirmed faults caught" },
+    { value: "Live", label: "in aircraft crew alerting" },
+    { value: "Patent", label: "filed, co-inventor" },
+    { value: "VFS 2025", label: "published & presented" },
+    { value: "PHM 2026", label: "conference panelist" }
+];
+
 export const personalInfo = {
-    name: "Manu Krishnan, Ph.D",
+    name: "Manu Krishnan, Ph.D.",
     title: "Staff Data Scientist @ Joby Aviation | HUMS, PHM & Production ML for Safety-Critical Aviation",
     location: "Charlotte, NC",
     email: "manukrishnantvm@gmail.com",
@@ -157,26 +165,32 @@ export const sideProjects = [
 export const selectedWork = [
     {
         title: "Bearing fault detection",
+        metric: "6 / 6 mo",
         description: "Caught 6 confirmed degradation events in 6 months on a safety-critical component; adopted into Joby's reliability program. Published at VFS 2025."
     },
     {
         title: "Crew alerting",
+        metric: "Live in CAS",
         description: "Redesigned propulsion imbalance monitoring; thresholds now live in the aircraft's Crew Alerting System."
     },
     {
         title: "Fleet reliability AI",
+        metric: "90%",
         description: "LLM platform classifying maintenance records with 90% accuracy and an FAA-auditable trail; replaced an outsourced effort and became the Reliability team's platform."
     },
     {
         title: "Go/no-go decision support",
+        metric: "−40%",
         description: "AI agents summarizing maintenance and flight data, cutting assessment time by 40%."
     },
     {
         title: "Predictive maintenance roadmap",
+        metric: "4-yr",
         description: "4-year roadmap presented to the Chief Engineer, Chief Pilot, and executive leadership; HUMS is now on the maintenance roadmap."
     },
     {
         title: "Data pipelines",
+        metric: "2–3 h → 0",
         description: "Automated flight data validation replacing 2–3 hours of manual work per flight; built to carry forward to future aircraft programs."
     }
 ];
@@ -184,15 +198,18 @@ export const selectedWork = [
 export const howIWork = [
     {
         title: "Earning operator trust",
-        description: "My bearing monitoring only became useful once flight test and maintenance trusted it enough to act on it. I worked directly with them to turn probabilistic predictions into clear go/no-go guidance, and showed them where the model could be wrong."
+        description: "My bearing monitoring only became useful once flight test and maintenance trusted it enough to act on it. I worked directly with them to turn probabilistic predictions into clear go/no-go guidance, and showed them where the model could be wrong.",
+        outcome: ""
     },
     {
         title: "Building the case across teams",
-        description: "Over several years, I built relationships across Engineering, Maintenance, and Aftermarket, benchmarked how major operators and OEMs run health monitoring, and made the case for HUMS as a maintenance capability. It's now on the maintenance roadmap."
+        description: "Over several years, I built relationships across Engineering, Maintenance, and Aftermarket, benchmarked how major operators and OEMs run health monitoring, and made the case for HUMS as a maintenance capability.",
+        outcome: "It's now on the maintenance roadmap."
     },
     {
         title: "Turning a vague question into a decision",
-        description: "I saw that ride-quality standards could be applied to our flight data, pulled in a vibration SME, a product SME, a flight test engineer, and a pilot, and turned the findings into a briefing requested by the Chief Pilot and Chief Engineer."
+        description: "I saw that ride-quality standards could be applied to our flight data, pulled in a vibration SME, a product SME, a flight test engineer, and a pilot, and turned the findings into a briefing requested by the Chief Pilot and Chief Engineer.",
+        outcome: ""
     }
 ];
 
@@ -252,18 +269,21 @@ export const publications = [
         type: "Journal",
         title: "Data-Driven Modeling of Vibrations in Turbofan Engines Under Different Operating Conditions",
         authors: "Krishnan, M., Sever, I.A. and Tarazaga, P.",
-        venue: "AIAA Journal (2022)"
+        venue: "AIAA Journal (2022)",
+        link: "#"
     },
     {
         type: "Journal",
         title: "Real time damage detection using recursive principal components and time varying auto-regressive modeling",
         authors: "Krishnan, M, Bhowmik, B., Hazra, B., and Pakrashi, V.",
-        venue: "Mechanical Systems and Signal Processing (2018)"
+        venue: "Mechanical Systems and Signal Processing (2018)",
+        link: "#"
     },
     {
         type: "Journal",
         title: "Online damage detection using recursive principal component analysis and recursive condition indicators",
         authors: "Krishnan, M, Bhowmik, B., Tiwari, A., and Hazra, B.",
-        venue: "Smart Materials and Structures (2017)"
+        venue: "Smart Materials and Structures (2017)",
+        link: "#"
     }
 ];

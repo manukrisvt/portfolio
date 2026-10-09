@@ -23,9 +23,9 @@ function App() {
         <HowIWork />
         <Speaking />
         <Experience />
-        <Projects />
-        <Skills />
         <Publications />
+        <Skills />
+        <Projects />
         <Contact />
       </main>
       <Footer />

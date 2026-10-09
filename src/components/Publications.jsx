@@ -28,10 +28,21 @@ const Publications = () => {
                                         </div>
                                         <div className="flex-1">
                                             <h3 className="text-lg font-bold text-text mb-2 group-hover:text-accent transition-colors">
-                                                {pub.title}
+                                                {pub.link && pub.link !== "#" ? (
+                                                    <a
+                                                        href={pub.link}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="hover:text-accent hover:underline"
+                                                    >
+                                                        {pub.title}
+                                                    </a>
+                                                ) : (
+                                                    pub.title
+                                                )}
                                             </h3>
                                             <p className="text-text-muted text-sm mb-1">{pub.authors}</p>
-                                            <p className="text-accent text-sm italic">{pub.venue}</p>
+                                            <p className={`text-sm ${pub.link && pub.link !== "#" ? "text-accent italic hover:underline" : "text-text-muted italic"}`}>{pub.venue}</p>
                                         </div>
                                         {pub.link && (
                                             <svg className="w-5 h-5 text-accent opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
