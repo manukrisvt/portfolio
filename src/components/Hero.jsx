@@ -82,7 +82,7 @@ const Hero = () => {
                     >
                         <div className="w-48 h-48 md:w-64 md:h-64 rounded-3xl overflow-hidden border-2 border-accent/40 shadow-2xl shadow-accent/20">
                             <img
-                                src="/images/headshot.jpg"
+                                src="/images/headshot.png"
                                 alt="Manu Krishnan"
                                 className="w-full h-full object-cover"
                             />
