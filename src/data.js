@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 export const personalInfo = {
     name: "Manu Krishnan, Ph.D",
-    title: "Staff Data Scientist @ Joby Aviation | Production ML for Safety-Critical Aviation",
+    title: "Staff Data Scientist @ Joby Aviation | HUMS, PHM & Production ML for Safety-Critical Aviation",
     location: "Charlotte, NC",
     email: "manukrishnantvm@gmail.com",
     phone: "540-449-7532",
@@ -12,7 +12,7 @@ export const personalInfo = {
         // { name: "GitHub", icon: FaGithub, link: "https://github.com/..." }, // Add if known
     ],
     summary: [
-        "Staff Data Scientist at Joby Aviation, building ML and monitoring systems that engineers, pilots, and operators act on, on a safety-critical aircraft program.",
+        "Staff Data Scientist and technical lead for Health and Usage Monitoring (HUMS) at Joby Aviation. I work on prognostics and health management (PHM) for a safety-critical eVTOL program, turning vibration and flight data into predictions that Flight Test, Reliability, and Maintenance use to make real decisions.",
         "I work at the intersection of vibration signal processing, applied ML, and production data systems, taking problems from raw flight telemetry to deployed tools without handoffs. Just as much of the work is adoption: partnering with Flight Test, Reliability, Maintenance, and component SMEs until a model's output becomes something people trust and use.",
         "I'm the technical lead for HUMS at Joby, and I mentor engineers across Data Analytics, Loads, and Reliability.",
         "Ph.D., Virginia Tech · M.Tech, IIT Guwahati (Batch Topper)"
