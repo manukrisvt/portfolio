@@ -210,12 +210,16 @@ export const speaking = [
         role: "Presenter",
         title: "Bearing spall detection and remaining-useful-life prediction for eVTOLs",
         venue: "VFS Forum 81 (2025)",
+        link: "https://lnkd.in/p/gimkFYbx",
+        linkLabel: "Read the post on LinkedIn",
         image: "/images/vfs-presentation.jpg"
     },
     {
         role: "Tutorial Instructor",
         title: "Data-Driven Vibration Modeling",
         venue: "Tutorial Session 3, 15th Annual Conference of the PHM Society (PHM 2023). A 90-minute tutorial for researchers and practitioners.",
+        link: "https://lnkd.in/p/gimkFYbx",
+        linkLabel: "Read the post on LinkedIn",
         image: "/images/phm-tutorial.jpg"
     },
     {
