@@ -6,6 +6,7 @@ import HUMS from './components/HUMS';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Publications from './components/Publications';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -18,6 +19,7 @@ function App() {
         <About />
         <HUMS />
         <Experience />
+        <Projects />
         <Skills />
         <Publications />
         <Contact />

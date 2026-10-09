@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 export const personalInfo = {
     name: "Manu Krishnan, Ph.D",
-    title: "Sr. Data Scientist @ Joby Aviation | Driving HUMS Innovation in eVTOL",
+    title: "Staff Scientist @ Joby Aviation | HUMS, ML & AI for eVTOL Certification",
     location: "Charlotte, NC",
     email: "manukrishnantvm@gmail.com",
     phone: "540-449-7532",
@@ -12,19 +12,20 @@ export const personalInfo = {
         // { name: "GitHub", icon: FaGithub, link: "https://github.com/..." }, // Add if known
     ],
     summary: [
-        "Results-driven Sr. Data Scientist and technical leader with 7+ years spanning predictive health monitoring, AI innovation, and academic research. Demonstrated expertise driving enterprise analytics, leading cross-functional teams, and developing production-grade AI/ML solutions to optimize complex system reliability. Adept at translating business needs into technical product strategies and driving organizational outcomes via data-driven innovation, executive collaboration, and agile project management.",
-        "My academic foundation is built on a Ph.D. in Aerospace Engineering from Virginia Tech, where I specialized in dynamic data-driven modeling and vibration analysis. Prior to that, I earned my M.Tech in Structural Engineering from IIT Guwahati. This rigorous research background has equipped me with a deep understanding of complex systems and the mathematical rigor required to develop robust AI solutions and drive innovation."
+        "Staff Scientist at Joby Aviation with 9+ years spanning predictive health monitoring, AI innovation, and academic research. My background combines two areas rarely found in a single engineer: mechanical vibrations & signal processing (PhD) and applied machine learning & AI systems — plus the data infrastructure that connects them, so I can take a problem from raw sensor data through signal processing, ML modeling, and production deployment without handoffs.",
+        "At Joby, I own production systems on the certification and safety path: a bearing spall detection framework that caught 6 confirmed events in 6 months on a safety-critical component, a Vibe PSD pipeline used by 5+ teams for qualification testing, an RPM-based propeller imbalance threshold table live in the aircraft's CAS alerting software, and an LLM + RAG fleet reliability platform built to meet FAA auditability requirements. I led the filing of the DA team's first patent and its first external publication (VFS 2025).",
+        "My academic foundation is built on a Ph.D. in Aerospace Engineering from Virginia Tech, where I specialized in dynamic data-driven modeling and vibration analysis. Prior to that, I earned my M.Tech in Structural Engineering from IIT Guwahati (batch topper). This rigorous research background has equipped me with a deep understanding of complex systems and the mathematical rigor required to develop robust AI solutions and drive innovation."
     ]
 };
 
 export const coreCompetencies = [
     "Predictive Modeling & Prognostics Algorithms",
-    "Enterprise AI Strategy, Predictive Analytics, and ML",
-    "Structural Health Monitoring & Diagnostics",
-    "Cross-functional Team Leadership & Agile Project Management",
-    "AI Agents (Google ADK, LangGraph), LLMs, RAG",
-    "Big Data Processing (Spark, Delta Lake, MLOps)",
-    "Git Version Control and Software Product Lifecycle",
+    "Structural Health Monitoring (HUMS) & Diagnostics",
+    "Applied ML/AI for Aerospace (LLMs, RAG, XGBoost, Autoencoders)",
+    "Vibration Analysis & Signal Processing",
+    "Data Architecture for Certification-Critical Systems (Delta Lake, Databricks)",
+    "Cross-functional Team Leadership & Technical Mentorship",
+    "FAA Certification & V&V Experience",
     "Time Series AI and IMU Sensor Data Modeling"
 ];
 
@@ -41,7 +42,7 @@ export const experience = [
     {
         company: "Joby Aviation",
         location: "Santa Cruz, CA",
-        role: "Sr. Data Scientist (Health Usage and Monitoring)",
+        role: "Staff Scientist (Health Usage and Monitoring)",
         period: "Jan 2022 -- Present",
         skills: [
             "Predictive Maintenance",
@@ -131,6 +132,25 @@ export const education = [
         details: [
             "Structural analysis, Structural dynamics, Finite element methods, Advanced Structural system Design, Reliability based design."
         ]
+    }
+];
+
+export const sideProjects = [
+    {
+        name: "TallyBite",
+        tagline: "AI-powered macro tracking app",
+        description: "A full-stack food tracking PWA: snap a photo of your meal and AI estimates the macros. Built with React, Vite, Tailwind, Capacitor (iOS/Android), Node/Express, and Postgres on Railway. Features Apple Sign-In with JWT verification, Stripe subscriptions, gamification, and trends analytics. Shipping to the App Store.",
+        tech: ["React", "Vite", "Capacitor", "Node.js", "Postgres", "Stripe", "AI Vision"],
+        link: "https://macrosnap-production.up.railway.app",
+        emoji: "\ud83c\udf5c"
+    },
+    {
+        name: "Home Automation",
+        tagline: "Smart home dashboard",
+        description: "A self-hosted smart home dashboard that unifies device control, automation routines, and real-time sensor monitoring into a single web interface for the household.",
+        tech: ["JavaScript", "IoT", "REST APIs", "Dashboard"],
+        link: "",
+        emoji: "\ud83c\udfe1"
     }
 ];
 
